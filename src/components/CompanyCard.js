@@ -37,9 +37,16 @@ export default function CompanyCard({ company }) {
         <strong>Employees:</strong> {company.employees}
       </p>
 
-      <a href={company.website} className="card-link" target="_blank">
-        <FaExternalLinkAlt className="icon-link" /> Visit Website
-      </a>
+        <a 
+          href={company.website} 
+          className="card-link" 
+          target="_blank" 
+          rel="noopener noreferrer"
+        >
+        <FaExternalLinkAlt className="icon-link" />    Visit Website
+        </a>
+
     </motion.div>
   );
 }
+
