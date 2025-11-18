@@ -349,3 +349,33 @@ body {
 .card:hover .icon-link {
   color: white;
 }
+
+/* -------- MOBILE FIXES -------- */
+@media (max-width: 600px) {
+
+  .filters {
+    gap: 12px;
+  }
+
+  .input-wrapper input,
+  .select-wrapper select {
+    padding-left: 55px !important;   /* more space for mobile icons */
+    font-size: 16px;
+    height: 48px;
+  }
+
+  .input-icon {
+    left: 18px;
+    font-size: 20px; /* slightly bigger for mobile */
+  }
+
+  .select-arrow {
+    right: 18px;
+    font-size: 18px;
+  }
+
+  .filters {
+    padding: 20px 12px;
+  }
+}
+
