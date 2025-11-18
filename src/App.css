@@ -350,6 +350,41 @@ body {
   color: white;
 }
 
+/* ---------------- CUSTOM SELECT WITH ICONS ---------------- */
+.select-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.select-wrapper select {
+  padding-left: 45px !important;  /* space for LEFT icons (location/industry) */
+  padding-right: 45px !important; /* space for RIGHT arrow */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* DROPDOWN ARROW (RIGHT SIDE) */
+.select-arrow {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #00eaff;
+  opacity: 0.8;
+  pointer-events: none;
+  transition: 0.25s ease;
+}
+
+/* Focus glow */
+.select-wrapper select:focus + .select-arrow {
+  color: white;
+  opacity: 1;
+  transform: translateY(-50%) scale(1.15);
+}
+
+
 /* -------- MOBILE FIXES -------- */
 @media (max-width: 600px) {
 
